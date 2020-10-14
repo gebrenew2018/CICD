@@ -39,6 +39,6 @@ public class StudentControllerIT {
         .contentType(MediaType.APPLICATION_JSON)
         .content(student)
         .accept(MediaType.APPLICATION_JSON))
-        .andExpect(status().is(200)).andReturn();
+        .andExpect(status().is(400)).andReturn();
     }
 }
